@@ -1,0 +1,14 @@
+site_name: Flight Deck & Avionics Inspection Report
+site_author: Arsalan Khan
+theme:
+  name: material
+nav:
+  - Home: index.md
+  - Purpose: 01-purpose.md
+  - Overview: 02-overview.md
+  - Inspection Scope: 03-inspection.md
+  - Systems Evaluation: 04-systems.md
+  - Compliance Review: 05-compliance.md
+  - Software Versions: 06-software.md
+  - EMI Testing: 07-emi.md
+  - Conclusions: 08-conclusion.md
