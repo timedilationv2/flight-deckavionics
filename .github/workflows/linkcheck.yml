@@ -1,0 +1,19 @@
+name: Link Check
+on:
+  pull_request:
+  workflow_dispatch:
+jobs:
+  linkcheck:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-python@v4
+        with:
+          python-version: '3.x'
+      - run: pip install mkdocs-material
+      - run: mkdocs build --clean
+      - run: grep -RhoE 'https?://[^"]+' site | sort -u > links.txt
+      - run: |
+          while read -r url; do
+            curl -I -s -o /dev/null -w "%{http_code} %{url_effective}\n" "$url"
+          done < links.txt
