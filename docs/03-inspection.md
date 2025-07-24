@@ -1,3 +1,1 @@
 ## Inspection Scope & Methodology
-
-This outlines procedures used during the avionics inspection...

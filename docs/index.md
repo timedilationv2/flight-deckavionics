@@ -1,3 +1,3 @@
 # Flight Deck & Avionics Report
 
-Welcome to the technical inspection report for the CBJ800 prototype business jet.
+Welcome. Use the left nav or tabs to explore each section.

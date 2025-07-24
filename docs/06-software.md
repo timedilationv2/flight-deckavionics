@@ -1,3 +1,1 @@
 ## Software & Fault Logging
-
-Summarizes version control and fault log results...

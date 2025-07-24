@@ -1,3 +1,1 @@
 ## Compliance Review
-
-Evaluates conformity with CAAC, FAA, and EASA standards...

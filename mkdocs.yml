@@ -1,14 +1,79 @@
-site_name: Flight Deck & Avionics Inspection Report
+site_name: Flight Deck & Avionics
+site_url: https://timedilationv2.github.io/flight-deckavionics/
 site_author: Arsalan Khan
+
 theme:
   name: material
+  palette:
+    scheme: slate
+  features:
+    - navigation.tabs
+    - navigation.instant
+    - navigation.indexes
+    - toc.integrate
+    - content.code.annotate
+    - content.tabs.link
+    - search.highlight
+    - search.suggest
+    - announce.dismiss
+  icon:
+    repo: fontawesome/brands/github
+
+repo_url: https://github.com/timedilationv2/flight-deckavionics
+repo_name: timedilationv2/flight-deckavionics
+edit_uri: ""
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/timedilationv2
+    - icon: fontawesome/brands/linkedin
+      link: https://www.linkedin.com/in/timedilation/
+  version:
+    provider: mike
+
+plugins:
+  - search
+  - macros
+  - mermaid2
+  - git-revision-date-localized:
+      type: datetime
+  - awesome-pages
+  - blog
+  - redirects
+  - rss:
+      feed_title: Flight Deck & Avionics
+      feed_description: Updates and changelogs
+      length: 20
+
+markdown_extensions:
+  - admonition
+  - footnotes
+  - tables
+  - attr_list
+  - pymdownx.superfences
+  - pymdownx.tabbed
+  - pymdownx.details
+  - pymdownx.tasklist
+  - pymdownx.highlight
+  - pymdownx.critic
+  - pymdownx.snippets
+
 nav:
   - Home: index.md
   - Purpose: 01-purpose.md
   - Overview: 02-overview.md
-  - Inspection Scope: 03-inspection.md
-  - Systems Evaluation: 04-systems.md
-  - Compliance Review: 05-compliance.md
-  - Software Versions: 06-software.md
-  - EMI Testing: 07-emi.md
+  - Inspection:
+      - Scope & Methodology: 03-inspection.md
+      - Systems Evaluation: 04-systems.md
+  - Compliance: 05-compliance.md
+  - Software: 06-software.md
+  - EMI: 07-emi.md
   - Conclusions: 08-conclusion.md
+  - Blog:
+      - blog/index.md
+
+extra_css:
+  - assets/custom.css
+extra_javascript:
+  - assets/custom.js

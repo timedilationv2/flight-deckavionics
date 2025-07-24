@@ -1,3 +1,1 @@
 ## Conclusions & Recommendations
-
-Final system readiness for testing and certification...

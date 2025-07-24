@@ -1,3 +1,1 @@
 ## Purpose
-
-This inspection was conducted in June 2018 to evaluate the CBJ800 avionics suite...

@@ -1,3 +1,1 @@
 ## EMI Testing Results
-
-Analysis of EMI characteristics under powered system conditions...
